@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clase Date</title>
-  </head>
-  <body>
-    <script>
-      const fecha = new Date("2021, 8, 9");
-      let mensajeFecha = function (fechaTransformar) {
-        let opciones = {
-          weekday: "long",
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        };
-        let mensaje =
-          "La fecha es " + fecha.toLocaleDateString("es-AR", opciones);
-        return mensaje;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clase Date</title>
+</head>
+
+<body>
+  <script>
+    const fecha = new Date("2021, 8, 9");
+    let mensajeFecha = function (fechaTransformar) {
+      let opciones = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
       };
-      document.write(mensajeFecha(fecha));
-    </script>
-  </body>
+      let mensaje =
+        "La fecha es " + fecha.toLocaleDateString("es-AR", opciones);
+      return mensaje;
+    };
+    document.write(mensajeFecha(fecha));
+  </script>
+</body>
+
 </html>
