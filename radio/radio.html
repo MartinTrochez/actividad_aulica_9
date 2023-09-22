@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<form>
+		<input type="radio" name="eleccion" value="adulto" id="radio1">Mayor de 18 años
+		<br>
+		<input type="radio" name="eleccion" value="menor" id="radio2">Menor de 18 años
+		<br>
+		<button type="button" onclick="mensaje()">Submit</button>
+	</form>
+	<script>
+		function mensaje() {
+			if (document.getElementById('radio1').checked) {
+				alert("Es mayor de edad")
+				document.getElementById('radio1').checked = false
+			}
+			if (document.getElementById('radio2').checked) {
+				alert("Es menor de edad")
+				document.getElementById('radio2').checked = false
+			}
+		}
+	</script>
+</body>
+
+</html>
