@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<script>
+		function mayorNumero() {
+			let mayor = 0
+			for (let i = 0; i < arguments.length; i++) {
+				if (mayor < arguments[i]) {
+					mayor = arguments[i]
+				}
+			}
+			return mayor
+		}
+		document.write(mayorNumero(1, 23, 2))
+	</script>
+</body>
+
+</html>

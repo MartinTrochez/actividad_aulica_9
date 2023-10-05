@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<script>
+		let punto = prompt('Ingrese la coordenada de un punto con el siguiente formato -> (999,999):');
+		let patron = /\([0-9]{1,3}\,[0-9]{1,3}\)/;
+		if (patron.test(punto))
+			document.write('El formato de ingreso es correcto');
+		else
+			document.write('El formato de ingreso no es correcto');
+	</script>
+</body>
+
+</html>

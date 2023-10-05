@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<script>
+		function funcion(x1) {
+			function funcionAnidada(x2) {
+				document.write('Valor funcion: ' + x1 + '\n')
+				document.write('Valor funcion Anidadad: ' + x2 + '\n')
+				document.write('Valor variable Local: ' + x3 + '\n')
+			}
+			let x3 = 3
+			funcionAnidada(x1)
+		}
+		funcion(1)
+	</script>
+</body>
+
+</html>
